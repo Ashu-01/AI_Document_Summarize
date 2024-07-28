@@ -21,16 +21,18 @@ cd AI_Document_Summarize
 
 Navigate to the `backend` directory and ensure the `main.py` and `requirements.txt` files are present.
 `backend/main.py` should contain your FastAPI application code.
+```
 docker-compose up --build
-
+```
 #### Step 3: Frontend Setup
 
 Ensure your React installed.
 Move to the `frontend` directory
 and run following command in terminal
+```
 npm install axios
 npm start
-
+```
 #### Step 4: Build and Run the Containers
 
 Use Docker Compose to build and run the containers:
