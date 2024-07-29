@@ -7,3 +7,4 @@ tf-keras
 summarizer
 spacy
 python-docx
+fitz
