@@ -21,21 +21,21 @@ cd AI_Document_Summarize
 
 Navigate to the `backend` directory and ensure the `main.py` and `requirements.txt` files are present.
 `backend/main.py` should contain your FastAPI application code.
+Run the following code in terminal inside backend repository.
 ```
 uvicorn main:app --reload   
 ```
 #### Step 3: Frontend Setup
 
 Ensure your React installed.
-Move to the `frontend` directory
-and run following command in terminal
+Move to the `frontend` directory and run following command in terminal
 ```
 npm install axios
 npm start
 ```
 #### Step 4:  Run the Containers
 
-Use Docker Compose to build and run the containers:
+Use Docker Compose to build and run the containers by running following command in the terminal inside or project repository:
 ```
 docker-compose up --build
 ```
@@ -61,9 +61,9 @@ docker-compose up --build
 - **Performance:** Optimizing Docker setup for efficient development workflow.
 
 ### Solutions
-- Used  `PyMuPDF` to handle different file formats.
-- Used `transformers` library to integrate the LLM.
+- Used `TransformerSummarizer` library to integrate the LLM.
 - Configured CORS settings in FastAPI to allow requests from the frontend.
+- Used GPT2 model to generate summary.
 - Structured Docker Compose file to streamline service dependencies and caching.
 
 ## Bibliography
